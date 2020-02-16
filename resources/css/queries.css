@@ -1,0 +1,31 @@
+@media screen and (max-width: 1200px) {
+    body { font-size: 25px; }
+    .about__container { width: 50%; }
+}
+
+@media screen and (max-width: 900px) {
+    body { font-size: 20px; }
+    .Landing__nav li a { color: purple; }
+}
+
+@media screen and (max-width: 750px) {
+    .about__container { width: 90%; }
+    .flavoury__content {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .riskDice__content { flex-direction: column-reverse;}
+
+    .flavoury__logo,
+    .riskDice__logo {
+        width: 10%;
+        margin: 5% 0;
+    }
+
+    .flavoury__mockup,
+    .riskDice__mockup { margin-top: 5%; width: 100%; }
+
+    #subrat { width: 60%; }
+
+}

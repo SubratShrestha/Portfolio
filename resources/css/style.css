@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: white;
+    color: black;
+    font-family: 'IBM Plex Sans', 'sans-serif';
+    font-weight: 300;
+    font-size: 30px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: auto;
+}
+
+h1 { font-size: 160%; margin: 2%; }
+
+h4 { font-size: 140%; margin: 5%; text-align: center;}
+
+h1::after,
+h4::after {
+    content: '';
+    background-color: purple;
+    display: block;
+    height: 2px;
+    width: 110px;
+}
+
+h4::after { width: 100px; margin: auto;}
+
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Landing { height: 100vh; display: flex; align-items: center;}
+
+.hero-text { width: 100%; text-align: center; }
+
+.row { max-width: 1140px; margin: 0 auto; }
+
+#subrat {
+    width: 40%;
+    transform: translateX(-0%);
+    animation: fill 0.5s ease forwards 2s;
+}
+
+.Landing__description {
+    font-size: 110%;
+    font-weight: 200;
+    line-height: 130%;
+}
+
+.Landing__nav { padding: 3%; list-style: none; }
+
+.Landing__nav li { display: inline-block; text-align: center;}
+
+.Landing__nav a {
+    color: black;
+    font-size: 85%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.link::after {
+    content: '';
+    margin: 7px 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: purple;
+    transition: width 0.3s;
+}
+
+.link:hover::after {
+    margin: 7px 0;
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.scroll {
+    text-align: center;
+    margin-top: -2.5%;
+    font-size: 90%;
+    color: gray;
+}
+.scroll a { color: black; }
+
+.indicators { transform: translateY(-100%);}
+
+@keyframes fill {
+    from { fill: transparent; }
+    to { fill: black; }
+}
+
+
+/*____________________________________________________________________________*/
+/*__________________________________Work._____________________________________*/
+/*____________________________________________________________________________*/
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+
+.sticky {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 1px 1px rgb(160, 160, 160,0.1);
+}
+
+.sticky nav { margin: 18px; }
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 60%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    transition: color 0.5s;
+}
+
+nav a:hover { color: black; }
+
+.active { color: black; }
+
+/*____________________________________________________________________________*/
+/*________________________________flavoury.___________________________________*/
+/*____________________________________________________________________________*/
+
+.flavoury {
+    height: 100vh;
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flavoury__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flavoury__logo,
+.riskDice__logo {width: 15%; margin-bottom: 10%;}
+
+.flavoury__logo img,
+.riskDice__logo img { width: 100%; }
+
+.flavoury__mockup {
+    flex: 0 1 55%;
+    margin-top: 10%;
+}
+.flavoury__mockup img { width: 100%; display: block; }
+
+.desc {
+    font-size: 80%;
+    line-height: 130%;
+    padding: 20px 0;
+}
+
+.project__link {
+    text-decoration: none;
+    color: #d64c3c;
+    font-size: 80%;
+    padding-right: 7%;
+}
+
+/*____________________________________________________________________________*/
+/*________________________________RiskDice.___________________________________*/
+/*____________________________________________________________________________*/
+
+.riskDice {
+    background-color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.riskDice__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.riskDice__mockup { flex: 0 1 55%; }
+
+.riskDice__mockup img { width: 100%; display: block; }
+
+.riskDice__logo img {
+    border-radius: 5px;
+    box-shadow: 7px 7px 8px rgb(222, 222, 222);
+}
+
+.riskDice__text { padding-left: 10%; }
+
+/*____________________________________________________________________________*/
+/*___________________________________about.___________________________________*/
+/*____________________________________________________________________________*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about__container { width: 34%; text-align: center; }
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    border-top: 1px solid rgb(231, 231, 231);
+    margin-top: 40px;
+}
+
+.email a {
+    color: rgb(90, 90, 90);
+    font-family: 'consolas';
+    font-size: 60%;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email a:hover { color: black; }
+
+h5 { padding: 10% 0; text-align: center; }
+
+.about__text p {
+    font-size: 70%;
+    color: rgb(160, 160, 160);
+    line-height: 150%;
+    word-spacing: 5px;
+    text-align: left;
+}
+
+.about__text a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid white;
+    transition: font-size 0.3s, border-bottom 0.3s;
+}
+
+.about__text a:hover {
+    font-size: 125%;
+    border-bottom: 1px solid purple;
+}
+
+.icons {
+    padding: 5% 0 3% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icons a { text-decoration: none; color: rgb(138, 138, 138); }
+#github:hover { color: #333; }
+#linkedin:hover { color: #0e76a8; }
+#gmail:hover { color: #D44638; }
+.icons i { padding: 15px; font-size: 30px; transition: color 0.5s;}

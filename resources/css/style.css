@@ -157,7 +157,7 @@ nav a:hover { color: black; }
     align-items: center;
 }
 
-.flavoury__content{
+.flavoury__content {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -167,7 +167,8 @@ nav a:hover { color: black; }
 .riskDice__logo {width: 15%; margin-bottom: 10%;}
 
 .flavoury__logo img,
-.riskDice__logo img { width: 100%; }
+.riskDice__logo img,
+.budgetor__logo img { width: 100%; }
 
 .flavoury__mockup {
     flex: 0 1 55%;
@@ -200,21 +201,38 @@ nav a:hover { color: black; }
     justify-content: center;
 }
 
-.riskDice__content {
+.riskDice__content, .budgetor__content {
     display: flex;
     justify-content: space-around;
 }
 
-.riskDice__mockup { flex: 0 1 55%; }
+.riskDice__mockup,
+.budgetor__mockup { flex: 0 1 55%; }
 
-.riskDice__mockup img { width: 100%; display: block; }
+.riskDice__mockup img,
+.budgetor__mockup img { width: 100%; display: block; }
 
 .riskDice__logo img {
     border-radius: 5px;
     box-shadow: 7px 7px 8px rgb(222, 222, 222);
 }
 
-.riskDice__text { padding-left: 10%; }
+.riskDice__text,
+.budgetor__text { padding-left: 10%; align-self: center;}
+
+/*____________________________________________________________________________*/
+/*________________________________Budgetor.___________________________________*/
+/*____________________________________________________________________________*/
+
+.budgetor {
+    height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.budgetor__logo {width: 20%; margin-bottom: 10%;}
 
 /*____________________________________________________________________________*/
 /*___________________________________about.___________________________________*/
